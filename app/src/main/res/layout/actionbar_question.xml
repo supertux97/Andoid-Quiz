@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/rootActionbarQuestion"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <!--https://stackoverflow.com/questions/5472362/android-automatic-horizontally-scrolling-textview-->
+    <TextView
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:ellipsize="marquee"
+        android:id="@+id/txtActionbarQuizzname"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Operativsytemer gjenn"
+        android:lines="1" android:layout_centerVertical="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_weight="4"
+        android:textStyle="bold"
+        android:id="@+id/txtActionbarQuestionNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        tools:text="15/20"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imgMuteEffects"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:src="@drawable/sound_effects"
+        android:layout_toRightOf="@id/txtActionbarQuestionNumber"/>
+
+    <ImageView
+        android:layout_weight="2"
+        android:id="@+id/imgMuteMusic"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:src="@drawable/music"
+        android:layout_toRightOf="@id/imgMuteEffects"/>
+</LinearLayout>

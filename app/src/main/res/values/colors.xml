@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#ffa382</color>
+    <color name="colorAccentDarker">#e2764f</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkgray">#333</color>
+    <color name="colorLightBlue">#4dd7fa</color>
+    <color name="colorNavigationbar">#1464f6</color>
+    <color name="colorPickDataContainer">#a500ff</color>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorgreen">#1ece1e</color>
+
+    <color name="lightGray">#7fdddddd</color>
+
+    <color name="colorAnswerCorrect">#009634</color>
+    <color name="colorRed">#ff4800</color>
+    <color name="colorLighterRed">#fc6262</color>
+    <color name="colorAnswerWrong">@color/colorRed</color>
+    <color name="colorAnswerMarked">#ffff2d</color>
+
+    <color name="colorDarkOrange">#f27a30</color>
+    <color name="colorLightGreen">#92d36e</color>
+
+    <color name="colorMediumLightBlue">#3d8af7</color>
+
+    <color name="transparentDimmed">#33FFFFFF</color>
+    <color name="darkPartlyTransparent">#44FFFFFF</color>
+</resources>

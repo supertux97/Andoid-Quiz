@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuizzApp</string>
+
+    <!--SELVE QUIZEN-->
+    <string name="btnFalse">Usant</string>
+    <string name="btnTrue">Sant</string>
+
+    <!--ACTIONBARHEADERE-->
+    <string name="category_actionbar_header">Kategorier</string>
+    <string name="quizz_actionbar_header">Quizzer</string>
+    <string name="actionbarheader_trophy">Trofeer</string>
+
+    <!--TEKSTBOKSENR-->
+    <string name="headerXP"><u>XP</u></string>
+    <string name="headerStatTotal"><u>Totalt</u></string>
+    <string name="statHeaderCategories"><u>Kategorier</u></string>
+    <string name="currentQuizz">Pågående quiz</string>
+    <string name="level">Level</string>
+    <string name="correct_plural">Riktige</string>
+    <string name="time_usage">Tidbruk</string>
+    <string name="num_questions">Antall spørsmål</string>
+
+
+    <!--MELDINGER/SPØRSMÅL TIL BRUKER-->
+    <string name="category_downloaded">Kategorier lastet ned</string>
+    <string name="category_loading">Laster inn kategorier</string>
+    <string name="question_loading">Laster inn spørsmål</string>
+    <string name="category_pick">Velg kategori</string>
+    <string name="exitQuizzConfirm">Vil du virkelig avbryte quizzen?</string>
+    <string name="quizz_downloaded">Quizzer lastet ned</string>
+    <string name="quizz_loading">Laster inn quizzer</string>
+    <string name="quizz_pick">Velg quiz</string>
+    <string name="retry">Prøv på nytt</string>
+    <string name="notEnoughQuestionsForGeneralQuizz">Fant ikke nok allmenne spørsmål for å starte quiz </string>
+    <string name="correct">Riktig</string>
+    <string name="wrong">Feil</string>
+    <string name="level_up">Level Up!</string>
+    <string name="trophy_unlocked">Trofe opplåst!</string>
+
+
+    <!--KNAPPER-->
+    <string name="confirmNo">Nei</string>
+    <string name="confirmYes">Ja</string>
+    <string name="continue_quizz">Fortsett</string>
+    <string name="current_quizz">Pågående</string>
+    <string name="quit">Avslutt</string>
+    <string name="submit_answer">Anngi svar</string>
+    <string name="continue_to_quizz">Fortsett</string>
+    <string name="new_quizz">Ny quiz</string>
+
+
+
+    <!--NAVIGASJONEN I BÅNN-->
+    <string name="nagivation_trophyes">Trofeer</string>
+    <string name="navigation_quizzes">Quizzer</string>
+    <string name="navigation_stats">Statistikk</string>
+
+    <!--FEILMELDINGER-->
+    <string name="noCategories">Fant desverre ingen kategorier</string>
+    <string name="noNotSpecifiedData">Fant desverre ingen data</string>
+    <string name="noQuestions">Fant desverre ingen spørsmål for denne quizzen</string>
+    <string name="noQuizzes">Fant desverre ingen quizzer for denne kategorien. Prøv gjerne en annen.</string>
+    <string name="no_internet_connection">Ingen internetttilkopling</string>
+    <string name="no_quizzes_taken">Du har ikke tatt noen quizzer enda...</string>
+    <string name="databaseError">En feil oppsto når dataen skulle hentes</string>
+
+
+    <!--STAT-->
+    <string name="statNumQuestions">Antall spørsmål</string>
+    <string name="statNumCorrectAnswers">Riktige</string>
+    <string name="statWrongAnswers">Feil</string>
+    <string name="statRowTimeUsage">Tidbruk</string>
+    <string name="statRowQuizzes">Antall quizzer</string>
+    <string name="statRowQuizzesAllCorrect">Quizzer med alle riktige</string>
+    <string name="statCategoryMostCorrect">Flest riktige</string>
+    <string name="statCategoryMostWrong">Flest feil</string>
+    <string name="statCategoryMostQuizzes">Flest quizzer</string>
+
+
+    <!--DIVERSE-->
+    <string name="category_general">Allmenn</string>
+    <string name="quizz_general">Allmenn</string>
+
+    <string name="of_trophy">Av</string>
+    <string name="taken_trophy">Tatt</string>
+    <string name="trophies">Trofeer</string>
+    <string name="noneTrophies">Ingen trofeer tatt til nå.</string>
+    <string name="go">go</string>
+    <string name="finished_quzz">Quiz ferdig!</string>
+
+
+</resources>

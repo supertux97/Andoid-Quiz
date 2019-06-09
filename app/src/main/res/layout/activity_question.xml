@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentQuestionActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.erlend.quizzapp.activity.QuestionActivity"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/overlayQuestionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressCountdownQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:progress="25"
+        android:theme="@style/blueprogress"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/rootQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/progressCountdownQuestion"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtQuestionImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="17dp"
+            tools:text="[MED BILDE]Er det sant at mac OSX ble levert med Internet Explorer som nettleser tidligere?"/>
+
+        <TextView
+            android:id="@+id/txtQuestionNoImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:textSize="17dp"
+            tools:text="[UTEN BILDE]Er det sant at mac OSX ble levert med Internet Explorer som nettleser tidligere?"/>
+
+        <ImageView
+            android:id="@+id/imgQuestion"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtQuestionImage"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/rootAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightAnswerContainer"
+        android:foregroundGravity="center_horizontal"
+        android:background="@color/colorLightBlue"
+        android:layout_below="@id/rootQuestion"
+        android:layout_marginTop="10dp"></FrameLayout>
+
+
+    <include android:id="@+id/bottomNavQuestionActvity" layout="@layout/fragment_bottom_navigation"></include>
+
+
+    <Button
+        android:id="@+id/btnQuitQuizz"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="@string/quit"
+        android:textSize="10sp"
+        android:padding="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/bottomNavQuestionActvity"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rootLevelUpTrophy"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--For at ikke containeren med levelUp skal forskyve seg før og etter animasjonen, fant jeg ut at jeg måtte legge til et vindu som tar hele skjermstørrelsen.
+    Jeg tror årsaken til forskyvingen kanskje er at partikkeleffektene blir regnet som en del av kontaineren,
+    og når kontaineren da får ny erdde og høyde vil også plasseringen endre seg-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contLevelUpTrophy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPickDataContainer"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@string/level_up"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:id="@+id/contLevelUpLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/star" />
+            <TextView
+                android:id="@+id/txtLevelUpLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/colorRed"
+                android:layout_centerInParent="true"
+                tools:text="5"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/txtContinueToQuizz"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_quiz_picker"
+        android:title="@string/navigation_quizzes"
+        android:icon="@drawable/nav_question"/>
+    <item android:id="@+id/navigation_stat"
+        android:title="@string/navigation_stats"
+        android:icon="@drawable/nav_stat"/>
+    <item android:id="@+id/navigation_trophy"
+        android:title="@string/nagivation_trophyes"
+        android:icon="@drawable/nav_trophy"/>
+
+</menu>

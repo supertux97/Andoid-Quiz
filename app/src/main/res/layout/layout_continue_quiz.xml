@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/headerCurrentQuizz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_quizz"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--https://stackoverflow.com/questions/14171471/remove-vertical-padding-from-horizontal-progressbar-->
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/progressCurrentQuizz"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            app:mpb_progressStyle="horizontal"
+            app:mpb_useIntrinsicPadding="false"
+            android:theme="@style/blueprogress"
+            tools:progress="10"
+            tools:visibility="visible"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"/>
+
+        <TextView android:id="@+id/txtCurrentQuizz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            tools:text="Operativsystemer" />
+
+    </FrameLayout>
+
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <Button
+        android:id="@+id/btnContinueQuizz"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/continue_quizz"
+        android:layout_gravity="center_horizontal" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</merge>

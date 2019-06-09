@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentQuestionActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.erlend.quizzapp.activity.QuestionActivity"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressCountdownQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLoading"
+        tools:progress="25"
+        android:theme="@style/blueprogress"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+
+    <!--Kontainer for spørsmål og svar-->
+    <LinearLayout
+        android:id="@+id/rootQuestion"
+        android:layout_below="@+id/progressCountdownQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bttomNavigationQuestionLand">
+
+        <!--SPØRSMÅL-->
+        <RelativeLayout
+            android:layout_below="@id/progressCountdownQuestion"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtQuestionImage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorAccent"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:textSize="17dp"
+                tools:text="Er det sant at mac OSX ble levert med Internet Explorer som nettleser tidligere?"/>
+
+            <TextView
+                android:id="@+id/txtQuestionNoImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:background="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                tools:background="@color/colorgreen"
+                android:textSize="17dp"
+                tools:text="Spørsmål uten bilde"/>
+
+            <ImageView
+                android:id="@+id/imgQuestion"
+                android:layout_width="match_parent"
+                android:layout_below="@id/txtQuestionImage"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/ic_launcher_round" />
+
+        </RelativeLayout>
+
+        <!--SVAR-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rootQuestion"
+            android:background="@color/colorLightBlue">
+
+            <FrameLayout
+                android:id="@+id/rootAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:background="@color/colorLightGreen">
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnQuitQuizz"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="@string/quit"
+                android:textSize="10sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bttomNavigationQuestionLand"
+        layout="@layout/fragment_bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/height_bottom_nav"
+        android:layout_width="match_parent"></include>
+
+</RelativeLayout>

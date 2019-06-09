@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="btnMultipleWidth">190dp</dimen>
+    <dimen name="heightAnswerContainer">170dp</dimen>
+    <dimen name="height_bottom_nav">50dp</dimen>
+
+    <dimen name="marginBottomStatContainer">20dp</dimen>
+
+    <dimen name="textSizeTrueFalseBtn">17sp</dimen>
+
+    <dimen name="widthTrueFalseButton">220dp</dimen>
+    <dimen name="widthStatRow">320dp</dimen>
+    <dimen name="txtSizeStatRow">16sp</dimen>
+
+    <dimen name="txtSizeTargetCountdown">60sp</dimen>
+    <dimen name="height_stat_row">21dp</dimen>
+    <dimen name="spacingStatContainer">25dp</dimen>
+    <dimen name="txtSizeBtnContinueQuizz">16sp</dimen>
+    <dimen name="size_star_finished_quizz">40dp</dimen>
+    <dimen name="height_xp_fragment">65dp</dimen>
+    <dimen name="height_trophy_row">80dp</dimen>
+</resources>

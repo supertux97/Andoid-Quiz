@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:shareInterpolator="@android:anim/linear_interpolator">
+
+    <!--https://stackoverflow.com/questions/19184196/android-alpha-translate-animations-->
+
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="@integer/fadeSlowly"/>
+
+</set>

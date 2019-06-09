@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.erlend.quizz_fra_dekompilert">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeFullscreen">
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.erlend.quizzapp.customView.NoDataActivity"
+            android:parentActivityName="com.example.erlend.quizzapp.activity.QuizzPickerActivity" />
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.QuestionActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.example.erlend.quizzapp.activity.QuizzPickerActivity" />
+        <activity android:name="com.example.erlend.quizzapp.activity.StatActivity" />
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.CountdownActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.QuizzPickerActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.FinishedQuizzActivity"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.example.erlend.quizzapp.activity.QuizzPickerActivity" />
+        <activity
+            android:name="com.example.erlend.quizzapp.activity.OnLevelUpTrophyActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.TransparentDimmed" />
+
+        <service
+            android:name="com.example.erlend.quizzapp.util.BackgroundMusicPlayerService"
+            android:exported="false" />
+
+        <activity android:name="com.example.erlend.quizzapp.activity.TrophyActivity" />
+    </application>
+
+</manifest>

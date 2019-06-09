@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="@dimen/size_star_finished_quizz"
+        android:layout_height="@dimen/size_star_finished_quizz"
+        android:src="@drawable/star_gray"/>
+</FrameLayout>

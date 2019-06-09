@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "957735130925",
+    "firebase_url": "https://quizz-d4fa6.firebaseio.com",
+    "project_id": "quizz-d4fa6",
+    "storage_bucket": "quizz-d4fa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957735130925:android:deeede56fcb1f55e",
+        "android_client_info": {
+          "package_name": "com.example.erlend.quizzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957735130925-afrtjq29pb5m23elbr30qurprdmt29mq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erlend.quizzapp",
+            "certificate_hash": "16f32f71b04f112c159cfefcf7b2f4fc66715ef7"
+          }
+        },
+        {
+          "client_id": "957735130925-1517dthvuh79phc69ntcq52ub5tdsahv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erlend.quizzapp",
+            "certificate_hash": "56302080217ab6f3372fa05835d67eb10a40ab1f"
+          }
+        },
+        {
+          "client_id": "957735130925-9oa323pltudf99125f3anqbkna6b06dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qwIJWA_99S_K4dFjgl3wKfzXJMUI9ZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957735130925-9oa323pltudf99125f3anqbkna6b06dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957735130925:android:60e2512043a20466",
+        "android_client_info": {
+          "package_name": "com.example.erlend.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957735130925-t2sobc12f0ll6fv95o14obntg10purfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erlend.test",
+            "certificate_hash": "16f32f71b04f112c159cfefcf7b2f4fc66715ef7"
+          }
+        },
+        {
+          "client_id": "957735130925-9oa323pltudf99125f3anqbkna6b06dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qwIJWA_99S_K4dFjgl3wKfzXJMUI9ZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957735130925-9oa323pltudf99125f3anqbkna6b06dp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

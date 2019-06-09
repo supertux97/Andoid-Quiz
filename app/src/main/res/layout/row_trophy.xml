@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_trophy_row"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/imgTrophyRow"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/nav_trophy"/>
+
+    <!--https://stackoverflow.com/questions/5472362/android-automatic-horizontally-scrolling-textview-->
+    <TextView
+            android:id="@+id/trophyRowTitle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            tools:text="Kjenner verden"
+            android:layout_toRightOf="@id/imgTrophyRow"
+            android:lines="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/trophyRowDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="5 quizer med allt riktig"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/trophyRowTitle"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/trophyXpForTrophy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="(150xp)"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/trophyRowTitle"
+        android:layout_toRightOf="@id/imgTrophyRow"
+        android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+    <LinearLayout android:orientation="vertical" 
+        android:id="@+id/contMultipleCol1"
+        android:layout_width="150dp"
+        android:layout_height="match_parent">
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 1" />
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 2" />
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 3" />
+
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" 
+        android:id="@+id/contMultipleCol2"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        tools:visibility="visible"
+        android:layout_toRightOf="@+id/contMultipleCol1">
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 4" />
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 5" />
+
+        <Button android:visibility="gone" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:text="Alternativ 6" />
+
+    </LinearLayout>
+</RelativeLayout>

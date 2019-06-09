@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--BAKGRUNNEN-->
+    <include layout="@layout/background_image" android:id="@+id/imageView"/>
+
+    <!--XP-->
+    <fragment
+        android:id="@+id/fragmentXp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.erlend.quizzapp.customView.FragmentXp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fragmentXp">
+
+        <!--QUIZZER-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+            <TextView
+                android:id="@id/headerCurrentQuizz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleStatheader"
+                android:text="@string/headerStatTotal" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rootStatGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBottomStatContainer"
+                android:layout_below="@id/headerCurrentQuizz">
+
+                <!--Antall spørsmål-->
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowQuestions"
+                    custom:rowName="@string/statNumQuestions"
+                    android:layout_width="@dimen/widthStatRow"
+                    android:layout_height="wrap_content">
+                </com.example.erlend.quizzapp.customView.StatRow>
+
+                <!--Ritkige-->
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowCorrectQuestions"
+                    custom:rowName="@string/statNumCorrectAnswers"
+                    android:layout_width="@dimen/widthStatRow"
+                    android:layout_height="wrap_content">
+                </com.example.erlend.quizzapp.customView.StatRow>
+
+                <!--Feil-->
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowWrongQuestions"
+                    custom:rowName="@string/statWrongAnswers"
+                    android:layout_width="@dimen/widthStatRow"
+                    android:layout_height="wrap_content">
+                </com.example.erlend.quizzapp.customView.StatRow>
+
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/RootStatTimeUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/marginBottomStatContainer"
+                android:layout_below="@+id/rootStatGeneral">
+
+                <!--Tidbruk-->
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowTimeUsage"
+                    custom:rowName="@string/statRowTimeUsage"
+                    android:layout_width="@dimen/widthStatRow"
+                    android:layout_height="wrap_content">
+                </com.example.erlend.quizzapp.customView.StatRow>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/RootStatQuizzes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/marginBottomStatContainer"
+                android:layout_below="@+id/RootStatTimeUsage">
+                <!--Antall quizzer-->
+
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowQuizzes"
+                    custom:rowName="@string/statRowQuizzes"
+                    android:layout_width="@dimen/widthStatRow"
+                    android:layout_height="wrap_content">
+                    <!--Quizzer med alle riktige-->
+                </com.example.erlend.quizzapp.customView.StatRow> <com.example.erlend.quizzapp.customView.StatRow
+                android:id="@+id/statRowQuizzesAllCorrect"
+                custom:rowName="@string/statRowQuizzesAllCorrect"
+                android:layout_width="@dimen/widthStatRow"
+                android:layout_height="wrap_content">
+            </com.example.erlend.quizzapp.customView.StatRow>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+        <!--KATEGORIER-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightBlue">
+
+            <TextView
+                android:id="@+id/headerStatCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styleStatheader"
+                android:text="@string/statHeaderCategories"/>
+
+            <!--INFO OM HVER ENKELT KATEGORI-->
+            <ScrollView
+                android:id="@+id/scrollviewForeachCategory"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fillViewport="true"
+                android:layout_below="@id/headerStatCategory"
+                android:fadeScrollbars="false"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:id="@+id/rootStatCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/headerStatCategory"
+                    android:orientation="vertical"
+                    tools:background="@color/colorgreen"
+                    tools:layout_width="match_parent"
+                    tools:layout_height="100dp" />
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/rootStatCategoryGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/scrollviewForeachCategory" >
+
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowCategoryMostCorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:rowName="@string/statCategoryMostCorrect" />
+
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowCategoryMostWrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:rowName="@string/statCategoryMostWrong" />
+
+                <com.example.erlend.quizzapp.customView.StatRow
+                    android:id="@+id/statRowCategoryMostQuizzes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    custom:rowName="@string/statCategoryMostQuizzes" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include android:id="@+id/bottomNavStatActivity" layout="@layout/fragment_bottom_navigation"></include>
+
+</RelativeLayout>

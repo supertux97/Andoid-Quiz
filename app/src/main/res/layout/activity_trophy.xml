@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erlend.quizzapp.activity.TrophyActivity">
+
+    <include layout="@layout/background_image" android:id="@+id/imageView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTrophyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMediumLightBlue"
+            tools:text="Tatt 15 av 30 tofeer"
+            android:textSize="15sp"
+            android:textAlignment="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewTrophies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTrophyInfo"
+        android:layout_above="@id/bottomNavStatActivity">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include android:id="@+id/bottomNavStatActivity" layout="@layout/fragment_bottom_navigation"></include>
+
+</RelativeLayout>

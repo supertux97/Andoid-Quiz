@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootFinished"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erlend.quizzapp.activity.FinishedQuizzActivity">
+
+    <!--BAKGRUNNEN-->
+  <include layout="@layout/background_image" />
+
+    <!--KONTAINEREN FOR STATISTIKKEN-->
+
+
+    <LinearLayout
+        android:id="@+id/contFinishedQuizzStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:background="@color/colorLightBlue"
+        android:orientation="vertical"
+        custom:layout_constraintBottom_toTopOf="@+id/include"
+        custom:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/headerFinishedQuizz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/finished_quizz_container"
+            android:padding="5dp"
+            android:text="@string/finished_quzz"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <!--XP-->
+
+        <fragment
+            android:id="@+id/fragmentXpFinishedQuizz"
+            android:name="com.example.erlend.quizzapp.customView.FragmentXp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <!--ANTALL-->
+        <com.example.erlend.quizzapp.customView.StatRow
+            android:gravity="center_horizontal"
+            android:id="@+id/finishRowNumQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:rowName="@string/num_questions" />
+
+
+        <!--RIKTIGE-->
+        <com.example.erlend.quizzapp.customView.StatRow
+            android:id="@+id/finishRowCorrect"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:rowName="@string/correct_plural" />
+
+        <!--FEIL-->
+        <com.example.erlend.quizzapp.customView.StatRow
+            android:id="@+id/finishRowWrong"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:rowName="@string/wrong" />
+
+        <!--TIDBRUK-->
+        <com.example.erlend.quizzapp.customView.StatRow
+            android:id="@+id/finishRowTimeUsed"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:rowName="@string/time_usage" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <include layout="@layout/horizontal_divider"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!--STJERNENE-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <include android:id="@+id/fiinishStar1"
+                layout="@layout/star_finished_quizz" />
+            <include android:id="@+id/fiinishStar2"
+                layout="@layout/star_finished_quizz" />
+            <include android:id="@+id/fiinishStar3"
+                layout="@layout/star_finished_quizz" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNewQuizz"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/orange_button"
+        android:text="@string/new_quizz"
+        custom:layout_constraintBottom_toTopOf="@+id/include"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@id/contFinishedQuizzStat" />
+
+    <!--NAVIGASJONEN I BÅNN-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/fragment_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_nav"
+        android:layout_alignParentBottom="true"
+        custom:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

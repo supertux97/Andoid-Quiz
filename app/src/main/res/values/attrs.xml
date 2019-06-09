@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OptionsStatRow">
+        <attr name="rowName" format="string" />
+        <attr name="rowValue" format="string" />
+    </declare-styleable>
+
+
+    <!--TILHØRER REALTIMEBLURVIEW fra https://github.com/mmin18/RealtimeBlurView/-->
+    <declare-styleable name="RealtimeBlurView">
+        <attr name="realtimeBlurRadius" format="dimension"/>
+        <attr name="realtimeDownsampleFactor" format="float"/>
+        <attr name="realtimeOverlayColor" format="color"/>
+    </declare-styleable>
+</resources>
